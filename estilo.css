@@ -1,0 +1,229 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+section {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 900px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+.tittle {
+  height: 185px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.tittle img {
+  width: 85px;
+  height: 25px;
+}
+.tittle h1 {
+  color: var(--Gray);
+  font-weight: 300;
+  text-align: center;
+  font-size: 50px;
+}
+.tittle span {
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+}
+.tittle h2 {
+  margin-top: 20px;
+  font-weight: 300;
+  color: var(--VeryDarkBlue);
+  font-size: 20px;
+  text-align: center;
+}
+.formulation {
+  margin-top: 40px;
+  width: 40%;
+  height: 80px;
+}
+.formulation input {
+  width: 65%;
+  height: 55px;
+  border-radius: 40px;
+  border: 1px solid var(--Gray);
+  padding: 20px;
+  outline: none;
+}
+
+::placeholder {
+  color: gray;
+}
+.formulation button {
+  width: 30%;
+  height: 55px;
+  border-radius: 40px;
+  background: var(--Blue);
+  border: none;
+  box-shadow: 0px 5px 5px var(--PaleBlue);
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Libre Franklin", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.formulation form {
+  display: flex;
+  justify-content: space-between;
+}
+.formulation h2 {
+  margin-top: 6px;
+  margin-left: 20px;
+  color: var(--LightRed);
+  font-size: 12px;
+  display: none;
+}
+.image {
+  margin-top: 60px;
+  width: 50%;
+  height: 400px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  margin-top: 50px;
+  height: 75px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: var(--Blue);
+}
+.icons {
+  display: flex;
+}
+.icons ion-icon {
+  display: flex;
+  height: 23px;
+  width: 23px;
+  padding: 10px;
+  margin-left: 20px;
+  color: var(--Blue);
+  border-radius: 100%;
+  background: white;
+  box-shadow: 2px 2px 2px 2px var(--Gray);
+}
+.icons ion-icon:hover {
+  background: var(--Blue);
+  color: white;
+  box-shadow: 0px 5px 5px var(--PaleBlue);
+  cursor: pointer;
+}
+.footer h3 {
+  color: var(--Gray);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+/*Movil*/
+@media screen and (max-width:375px) {
+  section {
+    margin-top: 40px;
+    height: 100vh;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .tittle {
+    height: 100px;
+    width: 80%;
+  }
+  .data-info h1 {
+      margin-top: 20px;
+    font-size: 20px;
+  }
+  .tittle h2 {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .formulation {
+    margin-top: 40px;
+    width: 80%;
+    height: 100px;
+    position: relative;
+  }
+  .formulation input {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    padding-left: 20px;
+
+  }
+
+  .formulation button {
+    width: 100%;
+    margin-top: 25px;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 15px;
+  }
+  .formulation form {
+    flex-direction: column;
+  }
+  .formulation h2 {
+    margin: none;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    font-size: 10px;
+    text-align: center;
+    display: none;
+  }
+  .image {
+    margin-top: 50px;
+    width: 90%;
+    height: 150px;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .footer {
+    margin-top: 60px;
+    height: 50px;
+    width: 80%;
+  }
+  .icons ion-icon {
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+  }
+  .footer h3 {
+    color: var(--Gray);
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+  }
+}
